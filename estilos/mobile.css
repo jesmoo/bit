@@ -1,0 +1,161 @@
+/* 
+orden del proyecto
+1. Posicionamiento
+2. Modelo de caja
+3. Tipografia
+4. Visuales
+5. Otros
+*/
+
+/* se formatea */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* variables */
+:root {
+	/* colores */
+	--bitcoinOrange: #f7931a;
+	--softOragne: #ffe9d5;
+	--secondaryBlue: #1a9af7;
+	--softBlue: #e7f5ff;
+	--warmBlack: #201e1c;
+	--black: #282623;
+	--gray: #bababa;
+	--ofWhite: #faf8f7;
+	--justWhite: #fff;
+	/* fuentes */
+	--Dm: "DM Sans", sans-serif;
+	--In: "Inter", sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: var(--Dm);
+}
+
+/* header */
+
+header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	min-width: 320px;
+	height: 334px;
+	text-align: center;
+	background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+}
+
+header img {
+	margin-top: 60px;
+	width: 150px;
+	height: 24px;
+	align-self: center;
+}
+
+.header--TitleContainer {
+	width: 90%;
+	min-width: 288px;
+	max-width: 900px;
+	height: 218px;
+	margin-top: 40px;
+	text-align: center;
+	align-self: center;
+}
+
+.header--TitleContainer h1 {
+	color: var(--justWhite);
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 2.6rem;
+}
+
+.header--TitleContainer p {
+	margin-top: 25px;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	color: var(--softOragne);
+}
+
+.header--TitleContainer .header--Button {
+	position: absolute;
+	left: calc(50% - 118px);
+	top: 270px;
+	display: block;
+	margin-top: 35px;
+	height: 48px;
+	width: 229px;
+	padding: 15px;
+	background-color: var(--ofWhite);
+
+	/* visuales */
+	box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+	border: none;
+	border-radius: 5px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--black);
+}
+
+.header--Button span {
+	display: inline-block;
+	width: 13px;
+	height: 8px;
+	margin-left: 10px;
+	background-image: url("../assets/icons/down-arrow.svg");
+}
+
+/*main  */
+
+main {
+	width: 100%;
+	height: auto;
+	background-color: var(--ofWhite);
+}
+
+.main--exchangeContainer {
+	width: 100%;
+	height: auto;
+	padding-top: 80px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.main--exchangeContainer--title {
+	width: 90%;
+	min-width: 238px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.main--exchangeContainer .backgroundImge {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	background-image: url("../assets/img/Bitcoin.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.main--exchangeContainer--title h2 {
+	margin-bottom: 30px;
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 2.6rem;
+	color: var(--black);
+}
+
+.main--exchangeContainer--title p {
+	margin-bottom: 30px;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.6rem;
+	color: #757575;
+}
