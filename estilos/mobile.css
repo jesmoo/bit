@@ -327,7 +327,8 @@ main {
   width: 90%;
   min-width: 288px;
   max-width: 400px;
-  height: 150px;
+  /* para solucionar el exceseso de palabras, es decir que sobre salga */
+  min-height: 150px;
   margin: 15px auto;
   padding: 15px;
   background-color: var(--black);
@@ -383,4 +384,33 @@ main {
   font-weight: 500;
   line-height: 1.8rem;
   color: #808080;
+}
+/* se  hace la 3rea section, en donde esta la imagen de fondo */
+.main--bitcoinImage {
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background-image: url("../assets/img/bitcoinbaby2x.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.main--bitcoinImage h2 {
+  padding-top: 60px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--justWhite);
+}
+
+/* seccion de planes */
+
+.plansContainer--slide {
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+  /* background-color: #e5e5e5; */
 }
