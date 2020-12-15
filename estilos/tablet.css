@@ -1,0 +1,4 @@
+.plansContainer--slide,
+.exchangeContainer--tablesContainer {
+  overflow-x: unset;
+}
