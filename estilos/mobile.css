@@ -161,13 +161,21 @@ main {
 }
 
 /* contenido de las tablas */
+.exchangeContainer--tablesContainer {
+  display: flex;
+  height: 400px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
 
 .tablesContainer {
+  scroll-snap-align: center;
   width: 70%;
   min-width: 235px;
   max-width: 500px;
   height: 360px;
-  margin: 0 auto;
+  margin: 0 15px;
   font-family: var(--In);
 }
 
@@ -407,10 +415,137 @@ main {
 
 /* seccion de planes */
 
-.plansContainer--slide {
+.main-plansContainer {
   width: 100%;
   min-width: 320px;
   padding-bottom: 70px;
   text-align: center;
-  /* background-color: #e5e5e5; */
+}
+
+/* .plansContainer--slide {
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+} */
+
+.plansContainer--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.plansContainer--title h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.plansContainer--title P {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+/* tipos de planes */
+.plansContainer--slide {
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+.plansContainer--card {
+  position: relative;
+  /* centra de manera automatica el scroll */
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 20px 10px 0;
+  padding: 0 15px;
+  background-color: var(--justWhite);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.recomendado {
+  position: absolute;
+  left: calc(50% - 60px);
+  top: -15px;
+  width: 120px;
+  height: 31px;
+  background-color: var(--bitcoinOrange);
+  border-radius: 8px;
+  color: var(--justWhite);
+  font-size: 1.2rem;
+  padding: 6px;
+  font-size: 1.2rem;
+} /* 
+.cardInfo--container {
+  position: relative;
+}
+ */
+.cardInfo--title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--black);
+}
+
+.cardInfo--price {
+  position: relative;
+  padding: 5px 0;
+  font-size: 5.2rem;
+  font-weight: bold;
+  /* line-height: 6.3rem; */
+  color: var(--black);
+}
+
+.cardInfo--price span {
+  position: absolute;
+  left: calc(30%);
+  top: calc(21%);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.cardInfo--text {
+  color: #757575;
+  font-size: 1.2rem;
+}
+
+.cardInfo--callAction {
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: #faf8f7;
+  border: 2px solid var(--bitcoinOrange);
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--black);
+  font-family: var(--Dm);
+}
+
+.cardInfo--callAction span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  background-image: url("../assets/icons/orange-right-arrow.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* para alinear la flecha */
+  vertical-align: text-bottom;
 }
