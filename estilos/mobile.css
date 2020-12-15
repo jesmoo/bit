@@ -163,7 +163,7 @@ main {
 /* contenido de las tablas */
 .exchangeContainer--tablesContainer {
   display: flex;
-  height: 400px;
+  height: 370px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
@@ -455,20 +455,21 @@ main {
 /* tipos de planes */
 .plansContainer--slide {
   display: flex;
-  height: 316px;
+  height: 320px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
 }
 
 .plansContainer--card {
+  display: flex;
   position: relative;
   /* centra de manera automatica el scroll */
   scroll-snap-align: center;
   width: 70%;
   min-width: 230px;
   max-width: 300px;
-  height: 250px;
+  height: 280px;
   margin: 20px 10px 0;
   padding: 0 15px;
   background-color: var(--justWhite);
@@ -488,11 +489,12 @@ main {
   font-size: 1.2rem;
   padding: 6px;
   font-size: 1.2rem;
-} /* 
-.cardInfo--container {
-  position: relative;
 }
- */
+.cardInfo--container {
+  /* height: 100%; */
+  margin-top: 10px;
+}
+
 .cardInfo--title {
   padding-top: 30px;
   font-size: 1.4rem;
